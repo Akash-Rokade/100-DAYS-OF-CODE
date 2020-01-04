@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Javascript Function</title>
+
+<script type="text/javascript">
+//In this script we have a function that checks wheather string are equal or not.It will print by alert box
+	function fun()
+	{
+		var first=document.getElementById("first").value;
+		var second=document.getElementById("second").value;
+		if(first==second)
+		{
+			alert("String are same");
+		}
+		else
+		{
+			alert("String are not same");
+		}
+
+	}
+</script>
+</head>
+<body>
+<form>
+<div align="center">
+	<h1>Login</h1><br><br><br><br><br>
+	<input id="first" type="text" placeholder="Enter first word" /><br><br>
+	<input id="second" type="text" placeholder="Enter second word" /><br><br>
+	<BUTTON onclick="fun()">Check</BUTTON>><br>
+</div>
+</form>
+</body>
+</html>
