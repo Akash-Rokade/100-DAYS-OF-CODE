@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Stopwatch</title>
+    <script>
+        var seconds=0;  
+            var Id=0;
+        function printtime()
+        {
+            document.getElementById("text").innerHTML=seconds+" seconds";
+            
+            seconds++;
+        }
+    function start()
+        {
+            
+        ID=window.setInterval(printtime,1000);
+            
+        }
+        function stop()
+        {
+            window.clearTimeout(ID);
+            
+        }
+        
+    </script>
+    </head>
+<body>
+    <label id="text" >stopwatch</label><br>
+    <button onclick="start()">Start</button><br><br>
+    <button onclick="stop()">Stop</button><br>
+    
+    </body>
+</html>
