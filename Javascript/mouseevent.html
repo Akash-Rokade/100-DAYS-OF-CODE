@@ -1,0 +1,21 @@
+<html>
+    
+    <head>
+    <script>
+    //This function is used for mouseEvent it will set new image on if mouse pointer on the img and if out it set defualt 
+        function setnewimg()
+        {
+          
+            document.getElementById("sd").src="img/EW2.jpg";
+        }
+        function setoldimg()
+        {
+            document.getElementById("sd").src="img/EW1.jpg";
+            
+        }
+        </script>
+    </head>
+    <body>
+        <img id="sd" onmouseover="setnewimg()" onmouseout="setoldimg()" src="img\EW1.jpg" width="500" height=500/>
+    </body>
+</html>
