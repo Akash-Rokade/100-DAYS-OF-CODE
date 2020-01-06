@@ -1,0 +1,27 @@
+<html>
+    <head>
+    
+        <script>
+        function validate()
+            {
+                var mb=document.getElementById("mobile").value;
+                var regx=/^[7-9]\d{9}$/;
+                if(regx.test(mb))
+                    {
+                        alert("Valid Number");
+                        
+                        
+                    }
+                else{
+                    alert("Invalid Number");
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+            <input id="mobile" type="text" placeholder="Enter Mobile number"/><br>
+        <button onclick="validate()">Check</button>
+    </body>
+    
+</html>
